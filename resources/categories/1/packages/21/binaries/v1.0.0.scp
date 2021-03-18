@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomModifyPackage>
+	<PackageName>培育次数扩展</PackageName>
+	<PackageAuthor>Godtype</PackageAuthor>
+	<PackageDiscription>可培育次数从4档增加到8档(文字说明需要手动改sirecm)</PackageDiscription>
+	<CustomModifyItems>
+		<CustomModifyItem>
+			<Caption>可培育次数</Caption>
+			<Enabled>true</Enabled>
+			<Codes>
+				<Code>
+					<Description>主代码</Description>
+					<Address>00494F87</Address><!--长度:18-->
+					<EnableCode>07 77 06 8A 81 91 4F 49 00 C3 FF 01 03 05 0A 0F 1E 32</EnableCode>
+					<DisableCode>03 77 12 FF 24 8D A0 4F 49 00 0C FF C3 B0 01 C3 B0 03</DisableCode>
+				</Code>	
+				<Code>
+					<Description>次数说明修改</Description>
+					<Address>0060B241;062B5F7;0062B957</Address><!--长度:4-->
+					<EnableCode>00 5F 5F 00</EnableCode>
+					<DisableCode>94 F3 8A 00</DisableCode>
+				</Code>	
+				<Code>
+					<Description>次数说明修改 指针(为免与其他人的代码冲突，使用了5F5F00这段位置，这一段原来的代码只用启动了SIRE后就会无作用)</Description>
+					<Address>005F5F00</Address><!--长度:32-->
+					<EnableCode>30 CB 7E 00 85 CC 7E 00 8A CC 7E 00 8F CC 7E 00 20 5F 5F 00 25 5F 5F 00 2A 5F 5F 00 2F 5F 5F 00</EnableCode>
+					<DisableCode>8B 44 24 04 83 F8 33 0F 87 C4 00 00 00 0F 86 80 08 60 5F 00 FF 24 85 D8 5F 5F 00 B8 01 00 00 00</DisableCode>
+				</Code>	
+				<Code>
+					<Description>4-7档次数说明文字(A6B8是"次"字，20是空格，30-39是数字1-9)</Description>
+					<Address>005F5F20</Address><!--长度:20-->
+					<EnableCode>31 30 A6 B8 00 31 35 A6 B8 00 33 30 A6 B8 00 35 30 A6 B8 00</EnableCode>
+					<DisableCode>C2 08 00 8B 44 24 08 85 C0 0F 8C A2 00 00 00 83 F8 08 0F 8F</DisableCode>
+				</Code>	
+				<Code>
+					<Description>1-3档次数说明文字</Description>
+					<Address>007ECC85</Address><!--长度:15-->
+					<EnableCode>20 31 A6 B8 00 20 33 A6 B8 00 20 35 A6 B8 00</EnableCode>
+					<DisableCode>00 00 00 35 A6 B8 00 33 A6 B8 00 31 A6 B8 00</DisableCode>
+				</Code>	
+			</Codes>
+			<Params>
+				<Param>
+					<Name>第1档次数修改</Name>
+					<Address>00494F92</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>1</Value>
+					<Min>0</Min>
+					<Max>254</Max>
+				</Param>
+				<Param>
+					<Name>第2档次数修改</Name>
+					<Address>00494F93</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>3</Value>
+					<Min>0</Min>
+					<Max>254</Max>
+				</Param>
+				<Param>
+					<Name>第3档次数修改</Name>
+					<Address>00494F94</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>5</Value>
+					<Min>0</Min>
+					<Max>254</Max>
+				</Param>
+				<Param>
+					<Name>第4档次数修改</Name>
+					<Address>00494F95</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>10</Value>
+					<Min>0</Min>
+					<Max>254</Max>
+				</Param>
+				<Param>
+					<Name>第5档次数修改</Name>
+					<Address>00494F96</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>15</Value>
+					<Min>0</Min>
+					<Max>254</Max>
+				</Param>
+				<Param>
+					<Name>第6档次数修改</Name>
+					<Address>00494F97</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>30</Value>
+					<Min>0</Min>
+					<Max>254</Max>
+				</Param>
+				<Param>
+					<Name>第7档次数修改</Name>
+					<Address>00494F98</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>50</Value>
+					<Min>0</Min>
+					<Max>254</Max>
+				</Param>
+			</Params>
+		</CustomModifyItem>
+	</CustomModifyItems>
+</CustomModifyPackage>

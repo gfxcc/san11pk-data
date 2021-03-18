@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomModifyPackage>
+	<PackageName>开局自定义遗迹点</PackageName>
+	<PackageAuthor>Godtype</PackageAuthor>
+	<PackageDiscription>可以开局时自定义遗迹或庙的出现点（本包中设置的坐标以未修改过的三11版本为准）。注意：设置时不要重复同一个点</PackageDiscription>
+	<CustomModifyItems>
+		<CustomModifyItem>
+			<Caption>自定义遗迹点</Caption>
+			<Enabled>true</Enabled>
+			<Codes>
+				<Code>
+					<Description>主代码</Description>
+					<Address>004A4C09</Address>
+					<EnableCode>C6 44 24 14 00 C6 44 24 15 01 C6 44 24 16 02 C6 44 24 17 03 C6 44 24 18 04 C6 44 24 19 05 C6 44 24 1C 06 C6 44 24 1D 07 C6 44 24 1E 08 C6 44 24 1F 09 C6 44 24 20 0A C6 44 24 21 0B EB 40 90 90</EnableCode>
+					<DisableCode>32 C0 8D 4C 24 24 90 88 01 FE C0 41 3C 28 7C F7 83 CA FF B8 FF FF FF FF 89 54 24 14 89 44 24 1C 66 89 54 24 18 66 89 44 24 20 B3 28 33 F6 BD 06 00 00 00 8D 64 24 00 0F BE FB 57 E8 07 D5 FC FF</DisableCode>
+				</Code>	
+			</Codes>
+		</CustomModifyItem>
+		<CustomModifyItem>
+			<Caption>庙</Caption>
+			<Enabled>true</Enabled>
+			<Params>
+				<Param>
+					<Name>１</Name>
+					<Address>004A4C0D</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>1</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>２</Name>
+					<Address>004A4C12</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>2</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>３</Name>
+					<Address>004A4C17</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>3</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>４</Name>
+					<Address>004A4C1C</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>4</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>５</Name>
+					<Address>004A4C21</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>5</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>６</Name>
+					<Address>004A4C26</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>6</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+			</Params>
+		</CustomModifyItem>
+		<CustomModifyItem>
+			<Caption>遗迹</Caption>
+			<Enabled>true</Enabled>
+			<Params>
+				<Param>
+					<Name>１</Name>
+					<Address>004A4C2B</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>7</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>２</Name>
+					<Address>004A4C30</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>8</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>３</Name>
+					<Address>004A4C35</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>9</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>４</Name>
+					<Address>004A4C3A</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>10</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>５</Name>
+					<Address>004A4C3F</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>11</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>６</Name>
+					<Address>004A4C44</Address>
+					<Length>1</Length>
+					<Type>ValueList</Type>
+					<Value>12</Value>
+					<ValueList>
+						<Item name="00天水(0,84)">0</Item>
+						<Item name="01涪水关(0,116)">1</Item>
+						<Item name="02成都(0,142)">2</Item>
+						<Item name="03武威(4,25)">3</Item>
+						<Item name="04建宁(9,170)">4</Item>
+						<Item name="05成都(18,152)">5</Item>
+						<Item name="06云南(20,199)">6</Item>
+						<Item name="07江州(21,136)">7</Item>
+						<Item name="08云南(23,190)">8</Item>
+						<Item name="09武威(24,33)">9</Item>
+						<Item name="10成都(25,120)">A</Item>
+						<Item name="11建宁(25,157)">B</Item>
+						<Item name="12梓潼(41,115)">C</Item>
+						<Item name="13云南(43,191)">D</Item>
+						<Item name="14安定(44,47)">E</Item>
+						<Item name="15长安(45,82)">F</Item>
+						<Item name="16建宁(51,166)">10</Item>
+						<Item name="17夏阳港(58,53)">11</Item>
+						<Item name="18武关(62,85)">12</Item>
+						<Item name="19西河港(70,49)">13</Item>
+						<Item name="20晋阳(76,52)">14</Item>
+						<Item name="21洞庭港(81,149)">15</Item>
+						<Item name="22晋阳(85,25)">16</Item>
+						<Item name="23晋阳(111,33)">17</Item>
+						<Item name="24蓟(112,21)">18</Item>
+						<Item name="25长沙(123,174)">19</Item>
+						<Item name="26桂阳(126,180)">1A</Item>
+						<Item name="27寿春(128,91)">1B</Item>
+						<Item name="28柴桑(129,153)">1C</Item>
+						<Item name="29蓟(130,6)">1D</Item>
+						<Item name="30濮阳(140,63)">1E</Item>
+						<Item name="31鄱阳港(146,157)">1F</Item>
+						<Item name="32北海(152,61)">20</Item>
+						<Item name="33鄱阳港(152,134)">21</Item>
+						<Item name="34北平(153,2)">22</Item>
+						<Item name="35卢陵港(156,167)">23</Item>
+						<Item name="36会稽(163,141)">24</Item>
+						<Item name="37安平港(164,30)">25</Item>
+						<Item name="38江都港(180,88)">26</Item>
+					</ValueList>
+				</Param>
+			</Params>
+		</CustomModifyItem>
+	</CustomModifyItems>
+</CustomModifyPackage>

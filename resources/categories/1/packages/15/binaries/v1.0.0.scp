@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomModifyPackage>
+	<PackageName>丰收各种设定</PackageName>
+	<PackageAuthor>Godtype</PackageAuthor>
+	<PackageDiscription>自定义丰收城市上限、有祈愿城市上限、没有祈愿的城市是否可以丰收、丰收的各种基本设定。（追加优化说明：由于还存在候选城市的下限，所以调整没有祈愿的城市是否可以丰收的代码）</PackageDiscription>
+	<CustomModifyItems>
+		<CustomModifyItem>
+			<Caption>自定义丰收城市上限</Caption>
+			<Enabled>TRUE</Enabled>
+			<Codes>
+				<Code>
+					<Description>丰收城市上限</Description>
+					<Address>0058F6CE</Address><!--长度:5-->
+					<EnableCode>B8 04 00 00 00</EnableCode>
+					<DisableCode>E8 7D 2A EE FF</DisableCode>
+				</Code>	
+				<Code>
+					<Description>丰收城市上限</Description>
+					<Address>0058F6DF</Address><!--长度:1-->
+					<EnableCode>00</EnableCode>
+					<DisableCode>02</DisableCode>
+				</Code>	
+			</Codes>
+			<Params>
+				<Param>
+					<Name>丰收城市上限</Name>
+					<Address>0058F6CF</Address>
+					<Length>4</Length>
+					<Type>Number</Type>
+					<Value>4</Value>
+					<Min>0</Min>
+					<Max>42</Max>
+				</Param>
+			</Params>
+		</CustomModifyItem>
+		<CustomModifyItem>
+			<Caption>有祈愿特技的城市上限</Caption>
+			<Enabled>TRUE</Enabled>
+			<Codes>
+				<Code>
+					<Description>祈愿上限</Description>
+					<Address>0058F6E0</Address><!--长度:2-->
+					<EnableCode>83 F8 03 BB 03 00 00 00 7F 00</EnableCode>
+					<DisableCode>83 F8 03 BB 03 00 00 00 7F 02</DisableCode>
+				</Code>	
+			</Codes>
+			<Params>
+				<Param>
+					<Name>祈愿上限</Name>
+					<Address>0058F6E8</Address>
+					<Length>2</Length>
+					<Type>ValueList</Type>
+					<Value>0</Value>
+					<ValueList>
+						<Item name="自动计算祈愿总数">7F 00</Item>
+						<Item name="自定上限">7F 02</Item>
+					</ValueList>
+				</Param>
+				<Param>
+					<Name>自定上限</Name>
+					<Address>0058F6E2;0058F6E4</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>3</Value>
+					<Min>0</Min>
+					<Max>42</Max>
+				</Param>
+			</Params>
+		</CustomModifyItem>
+		<CustomModifyItem>
+			<Caption>没有祈愿特技的城市不能丰收</Caption>
+			<Enabled>FALSE</Enabled>
+			<Codes>
+				<Code>
+					<Description>不能丰收</Description>
+					<Address>0058F6EC</Address><!--长度:4-->
+					<EnableCode>8B FB EB 02</EnableCode>
+					<DisableCode>3B DF 7C 02</DisableCode>
+				</Code>
+			</Codes>
+		</CustomModifyItem>
+		<CustomModifyItem>
+			<Caption>丰收的各种基本设定</Caption>
+			<Enabled>TRUE</Enabled>
+			<Params>
+				<Param>
+					<Name>本年度是否发成丰收的概率</Name>
+					<Address>0058F5AA</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>30</Value>
+					<Min>1</Min>
+					<Max>100</Max>
+				</Param>
+				<Param>
+					<Name>预定丰收月份</Name>
+					<Address>0058F5A2</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>4</Value>
+					<Min>1</Min>
+					<Max>12</Max>
+				</Param>
+				<Param>
+					<Name>丰收开始月份</Name>
+					<Address>0058F84D</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>7</Value>
+					<Min>1</Min>
+					<Max>12</Max>
+				</Param>
+				<Param>
+					<Name>丰收结束月份</Name>
+					<Address>0058F539</Address>
+					<Length>1</Length>
+					<Type>Number</Type>
+					<Value>8</Value>
+					<Min>1</Min>
+					<Max>12</Max>
+				</Param>
+			</Params>
+		</CustomModifyItem>
+	</CustomModifyItems>
+</CustomModifyPackage>
